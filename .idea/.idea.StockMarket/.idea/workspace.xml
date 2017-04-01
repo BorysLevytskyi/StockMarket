@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="75f22a12-5bea-4061-99ec-bebcd2ecdab7" name="Default" comment="" />
+    <ignored path="../../../../b/" />
+    <ignored path=".idea/" />
+    <ignored path="packages/" />
+    <ignored path="bin/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="StockExchangeActor.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StockMarket.Model/Actors/StockExchangeActor.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+              <folding>
+                <marker date="1491049802000" expanded="true" signature="6:189" ph="..." />
+                <marker date="1491049802000" expanded="true" signature="225:987" ph="{...}" />
+                <marker date="1491049802000" expanded="true" signature="298:985" ph="{...}" />
+                <marker date="1491049802000" expanded="true" signature="401:586" ph="{...}" />
+                <marker date="1491049802000" expanded="true" signature="647:766" ph="{...}" />
+                <marker date="1491049802000" expanded="true" signature="816:924" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TraderActor.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/StockMarket.Model/Actors/TraderActor.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <marker date="1491050399000" expanded="true" signature="6:188" ph="..." />
+                <marker date="1491050399000" expanded="true" signature="224:1972" ph="{...}" />
+                <marker date="1491050399000" expanded="true" signature="284:1970" ph="{...}" />
+                <marker date="1491050399000" expanded="true" signature="418:530" ph="{...}" />
+                <marker date="1491050399000" expanded="true" signature="585:1576" ph="{...}" />
+                <marker date="1491050399000" expanded="true" signature="777:1408" ph="{...}" />
+                <marker date="1491050399000" expanded="true" signature="808:945" ph="/* var ex = Context.ActorSelection(exchangePath) ... */" />
+                <marker date="1491050399000" expanded="true" signature="810:945" ph="..." />
+                <marker date="1491050399000" expanded="true" signature="1005:1260" ph="{...}" />
+                <marker date="1491050399000" expanded="true" signature="1440:1507" ph="{...}" />
+                <marker date="1491050399000" expanded="true" signature="1635:1732" ph="{...}" />
+                <marker date="1491050399000" expanded="true" signature="1795:1909" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActorPathResolver.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StockMarket.Model/ActorPathResolver.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+              <folding>
+                <marker date="1491049600000" expanded="true" signature="27:366" ph="{...}" />
+                <marker date="1491049600000" expanded="true" signature="73:364" ph="{...}" />
+                <marker date="1491049600000" expanded="true" signature="137:198" ph="{...}" />
+                <marker date="1491049600000" expanded="true" signature="272:358" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StockMarketSystem.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StockMarket.Model/StockMarketSystem.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="40" column="114" lean-forward="false" selection-start-line="40" selection-start-column="114" selection-end-line="40" selection-end-column="114" />
+              <folding>
+                <marker date="1491050256000" expanded="true" signature="6:83" ph="..." />
+                <marker date="1491050256000" expanded="true" signature="112:1420" ph="{...}" />
+                <marker date="1491050256000" expanded="true" signature="149:1418" ph="{...}" />
+                <marker date="1491050256000" expanded="true" signature="325:385" ph="{...}" />
+                <marker date="1491050256000" expanded="true" signature="435:529" ph="{...}" />
+                <marker date="1491050256000" expanded="true" signature="587:806" ph="{...}" />
+                <marker date="1491050256000" expanded="true" signature="714:794" ph="{...}" />
+                <marker date="1491050256000" expanded="true" signature="857:1009" ph="{...}" />
+                <marker date="1491050256000" expanded="true" signature="1068:1205" ph="{...}" />
+                <marker date="1491050256000" expanded="true" signature="1270:1412" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TraderFactoryActor.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StockMarket.Model/Actors/TraderFactoryActor.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <marker date="1491049083000" expanded="true" signature="6:128" ph="..." />
+                <marker date="1491049083000" expanded="true" signature="164:613" ph="{...}" />
+                <marker date="1491049083000" expanded="true" signature="231:611" ph="{...}" />
+                <marker date="1491049083000" expanded="true" signature="273:343" ph="{...}" />
+                <marker date="1491049083000" expanded="true" signature="395:544" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StockExchangeFactoryActor.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StockMarket.Model/Actors/StockExchangeFactoryActor.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+              <folding>
+                <marker date="1491049511000" expanded="true" signature="6:84" ph="..." />
+                <marker date="1491049511000" expanded="true" signature="120:655" ph="{...}" />
+                <marker date="1491049511000" expanded="true" signature="194:653" ph="{...}" />
+                <marker date="1491049511000" expanded="true" signature="243:318" ph="{...}" />
+                <marker date="1491049511000" expanded="true" signature="388:586" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoggingExtensions.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StockMarket.Model/Logging/LoggingExtensions.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding>
+                <marker date="1491050441000" expanded="true" signature="6:31" ph="..." />
+                <marker date="1491050441000" expanded="true" signature="68:607" ph="{...}" />
+                <marker date="1491050441000" expanded="true" signature="112:527" ph="{...}" />
+                <marker date="1491050441000" expanded="true" signature="293:521" ph="{...}" />
+                <marker date="1491050441000" expanded="true" signature="562:605" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StockMarket.Console/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="34" column="59" lean-forward="false" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
+              <folding>
+                <marker date="1491050515000" expanded="true" signature="6:120" ph="..." />
+                <marker date="1491050515000" expanded="true" signature="151:975" ph="{...}" />
+                <marker date="1491050515000" expanded="true" signature="180:973" ph="{...}" />
+                <marker date="1491050515000" expanded="true" signature="233:350" ph="{...}" />
+                <marker date="1491050515000" expanded="true" signature="426:967" ph="{...}" />
+                <marker date="1491050515000" expanded="true" signature="689:844" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/StockMarket.Model/TraderActor.cs" />
+        <option value="$PROJECT_DIR$/StockMarket.Model/Messages/ActorCreated.cs" />
+        <option value="$PROJECT_DIR$/StockMarket.Model/StockMarket.cs" />
+        <option value="$PROJECT_DIR$/StockMarket.Model/Messages/OrderPlaced.cs" />
+        <option value="$PROJECT_DIR$/StockMarket.Model/Messages/SendOrder.cs" />
+        <option value="$PROJECT_DIR$/StockMarket.Model/Actors/SymbolStockExchangeActor.cs" />
+        <option value="$PROJECT_DIR$/StockMarket.Model/Messages/CreateTrader.cs" />
+        <option value="$PROJECT_DIR$/StockMarket.Infrastructure/Class1.cs" />
+        <option value="$PROJECT_DIR$/StockMarket.Model/Actors/TraderFactoryActor.cs" />
+        <option value="$PROJECT_DIR$/StockMarket.Model/Actors/ExchangeActor.cs" />
+        <option value="$PROJECT_DIR$/StockMarket.Model/ActorPath.cs" />
+        <option value="$PROJECT_DIR$/StockMarket.Model/Actors/ExchangeFactoryActor.cs" />
+        <option value="$PROJECT_DIR$/StockMarket.Model/Actors/StockExchangeFactoryActor.cs" />
+        <option value="$PROJECT_DIR$/StockMarket.Model/ActorPathResolver.cs" />
+        <option value="$PROJECT_DIR$/StockMarket.Model/Actors/StockExchangeActor.cs" />
+        <option value="$PROJECT_DIR$/StockMarket.Model/Actors/TraderActor.cs" />
+        <option value="$PROJECT_DIR$/StockMarket.Model/Logging/LoggingExtensions.cs" />
+        <option value="$PROJECT_DIR$/StockMarket.Console/Program.cs" />
+        <option value="$PROJECT_DIR$/StockMarket.Model/StockMarketSystem.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="47" />
+    <option name="y" value="23" />
+    <option name="width" value="1393" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StockMarket (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StockMarket.Model" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StockMarket (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StockMarket.Model" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Actors" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StockMarket (2 projects)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StockMarket.Console" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="node.js.selected.package.jscs" value="" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration default="true" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/StockMarket.Console/StockMarket.Console.csproj" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.6.1" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/StockMarket.Console/bin/Debug/StockMarket.Console.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/StockMarket.Console/bin/Debug" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75f22a12-5bea-4061-99ec-bebcd2ecdab7" name="Default" comment="" />
+      <created>1491043445543</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1491043445543</updated>
+      <workItem from="1491043448031" duration="2274000" />
+      <workItem from="1491045738408" duration="5063000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1491050855149</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1491050855149</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7337000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="47" y="23" width="1393" height="877" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.11398964" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.88601035" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.49444854" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Change Signature" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.257587" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.4974093" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.4974093" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/StockMarket.Model/Actors/TraderActor.cs</url>
+          <line>47</line>
+          <properties startOffset="1313" endOffset="1394" documentPath="$PROJECT_DIR$/StockMarket.Model/Actors/TraderActor.cs" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/StockMarket.Model/Actors/TraderActor.cs</url>
+          <line>52</line>
+          <properties startOffset="1471" endOffset="1492" documentPath="$PROJECT_DIR$/StockMarket.Model/Actors/TraderActor.cs" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/StockMarket.Model/Actors/TraderActor.cs</url>
+          <line>28</line>
+          <properties startOffset="685" endOffset="760" documentPath="$PROJECT_DIR$/StockMarket.Model/Actors/TraderActor.cs" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/StockMarket.Model/Actors/StockExchangeActor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1491049802000" expanded="true" signature="6:189" ph="..." />
+            <marker date="1491049802000" expanded="true" signature="225:987" ph="{...}" />
+            <marker date="1491049802000" expanded="true" signature="298:985" ph="{...}" />
+            <marker date="1491049802000" expanded="true" signature="401:586" ph="{...}" />
+            <marker date="1491049802000" expanded="true" signature="647:766" ph="{...}" />
+            <marker date="1491049802000" expanded="true" signature="816:924" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StockMarket.Model/Messages/ActorCreated.cs" />
+    <entry file="file://$USER_HOME$/.local/share/JetBrains/Shared/v08/DecompilerCache/decompiler/58E88438-021F-430C-BACB-986511FBA34C/fc/da0e2f35/ICanTell.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/share/JetBrains/Shared/v08/DecompilerCache/decompiler/58E88438-021F-430C-BACB-986511FBA34C/5b/7bfc0a7f/ActorBase.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/share/JetBrains/Shared/v08/DecompilerCache/decompiler/58E88438-021F-430C-BACB-986511FBA34C/04/a050ca6c/UntypedActor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="44" lean-forward="false" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/share/JetBrains/Shared/v08/DecompilerCache/decompiler/58E88438-021F-430C-BACB-986511FBA34C/65/5e98688f/ReceiveActor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="46" lean-forward="false" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StockMarket.Model/Messages/IOrder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1491045010000" expanded="true" signature="36:232" ph="{...}" />
+            <marker date="1491045010000" expanded="true" signature="66:230" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StockMarket.Model/Messages/OrderPlaced.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+          <folding>
+            <marker date="1491045232000" expanded="true" signature="36:561" ph="{...}" />
+            <marker date="1491045232000" expanded="true" signature="76:559" ph="{...}" />
+            <marker date="1491045232000" expanded="true" signature="354:553" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StockMarket.Model/Messages/SendOrder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding>
+            <marker date="1491045017000" expanded="true" signature="51:497" ph="{...}" />
+            <marker date="1491045017000" expanded="true" signature="89:495" ph="{...}" />
+            <marker date="1491045017000" expanded="true" signature="321:489" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StockMarket.Model/Messages/OrderType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1491044554000" expanded="true" signature="36:104" ph="{...}" />
+            <marker date="1491044554000" expanded="true" signature="64:102" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StockMarket.Model/Messages/CreateTrader.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+          <folding>
+            <marker date="1491047058000" expanded="true" signature="75:202" ph="{...}" />
+            <marker date="1491047058000" expanded="true" signature="107:200" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StockMarket.Infrastructure/Class1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StockMarket.Model/Actors/StockExchangeFactoryActor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <marker date="1491049511000" expanded="true" signature="6:84" ph="..." />
+            <marker date="1491049511000" expanded="true" signature="120:655" ph="{...}" />
+            <marker date="1491049511000" expanded="true" signature="194:653" ph="{...}" />
+            <marker date="1491049511000" expanded="true" signature="243:318" ph="{...}" />
+            <marker date="1491049511000" expanded="true" signature="388:586" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StockMarket.Model/Actors/TraderFactoryActor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <marker date="1491049083000" expanded="true" signature="6:128" ph="..." />
+            <marker date="1491049083000" expanded="true" signature="164:613" ph="{...}" />
+            <marker date="1491049083000" expanded="true" signature="231:611" ph="{...}" />
+            <marker date="1491049083000" expanded="true" signature="273:343" ph="{...}" />
+            <marker date="1491049083000" expanded="true" signature="395:544" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StockMarket.Model/Actors/StockExchangeActor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+          <folding>
+            <marker date="1491049802000" expanded="true" signature="6:189" ph="..." />
+            <marker date="1491049802000" expanded="true" signature="225:987" ph="{...}" />
+            <marker date="1491049802000" expanded="true" signature="298:985" ph="{...}" />
+            <marker date="1491049802000" expanded="true" signature="401:586" ph="{...}" />
+            <marker date="1491049802000" expanded="true" signature="647:766" ph="{...}" />
+            <marker date="1491049802000" expanded="true" signature="816:924" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StockMarket.Model/Logging/LoggingExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <marker date="1491050441000" expanded="true" signature="6:31" ph="..." />
+            <marker date="1491050441000" expanded="true" signature="68:607" ph="{...}" />
+            <marker date="1491050441000" expanded="true" signature="112:527" ph="{...}" />
+            <marker date="1491050441000" expanded="true" signature="293:521" ph="{...}" />
+            <marker date="1491050441000" expanded="true" signature="562:605" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StockMarket.Console/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="34" column="59" lean-forward="false" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
+          <folding>
+            <marker date="1491050515000" expanded="true" signature="6:120" ph="..." />
+            <marker date="1491050515000" expanded="true" signature="151:975" ph="{...}" />
+            <marker date="1491050515000" expanded="true" signature="180:973" ph="{...}" />
+            <marker date="1491050515000" expanded="true" signature="233:350" ph="{...}" />
+            <marker date="1491050515000" expanded="true" signature="426:967" ph="{...}" />
+            <marker date="1491050515000" expanded="true" signature="689:844" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StockMarket.Model/StockMarketSystem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="40" column="114" lean-forward="false" selection-start-line="40" selection-start-column="114" selection-end-line="40" selection-end-column="114" />
+          <folding>
+            <marker date="1491050256000" expanded="true" signature="6:83" ph="..." />
+            <marker date="1491050256000" expanded="true" signature="112:1420" ph="{...}" />
+            <marker date="1491050256000" expanded="true" signature="149:1418" ph="{...}" />
+            <marker date="1491050256000" expanded="true" signature="325:385" ph="{...}" />
+            <marker date="1491050256000" expanded="true" signature="435:529" ph="{...}" />
+            <marker date="1491050256000" expanded="true" signature="587:806" ph="{...}" />
+            <marker date="1491050256000" expanded="true" signature="714:794" ph="{...}" />
+            <marker date="1491050256000" expanded="true" signature="857:1009" ph="{...}" />
+            <marker date="1491050256000" expanded="true" signature="1068:1205" ph="{...}" />
+            <marker date="1491050256000" expanded="true" signature="1270:1412" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StockMarket.Model/ActorPathResolver.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding>
+            <marker date="1491049600000" expanded="true" signature="27:366" ph="{...}" />
+            <marker date="1491049600000" expanded="true" signature="73:364" ph="{...}" />
+            <marker date="1491049600000" expanded="true" signature="137:198" ph="{...}" />
+            <marker date="1491049600000" expanded="true" signature="272:358" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StockMarket.Model/Actors/TraderActor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <marker date="1491050399000" expanded="true" signature="6:188" ph="..." />
+            <marker date="1491050399000" expanded="true" signature="224:1972" ph="{...}" />
+            <marker date="1491050399000" expanded="true" signature="284:1970" ph="{...}" />
+            <marker date="1491050399000" expanded="true" signature="418:530" ph="{...}" />
+            <marker date="1491050399000" expanded="true" signature="585:1576" ph="{...}" />
+            <marker date="1491050399000" expanded="true" signature="777:1408" ph="{...}" />
+            <marker date="1491050399000" expanded="true" signature="808:945" ph="/* var ex = Context.ActorSelection(exchangePath) ... */" />
+            <marker date="1491050399000" expanded="true" signature="810:945" ph="..." />
+            <marker date="1491050399000" expanded="true" signature="1005:1260" ph="{...}" />
+            <marker date="1491050399000" expanded="true" signature="1440:1507" ph="{...}" />
+            <marker date="1491050399000" expanded="true" signature="1635:1732" ph="{...}" />
+            <marker date="1491050399000" expanded="true" signature="1795:1909" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

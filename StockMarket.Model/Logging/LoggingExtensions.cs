@@ -1,25 +1,38 @@
 ﻿using System;
-using Akka.Actor;
+using System.Collections.Generic;
+using System.Linq;
+using StockMarket.Model.Traders;
 
 namespace StockMarket.Model.Logging
 {
     public static class LoggingExtensions
     {
-        private static object _syncRoot = new object();
+        private static readonly object SyncRoot = new object();
+
+        private static readonly Type[] DisabledLoggers =
+        {
+            typeof(TraderActor)
+        };
 
         public static void Info(this ILogMessages actor, string message, ConsoleColor color = ConsoleColor.DarkGreen)
         {
-            lock (_syncRoot)
+            lock (SyncRoot)
             {
+                if (DisabledLoggers.Contains(actor.GetType()))
+                {
+                    return;
+                }
+
                 Console.ForegroundColor = color;
-                Console.WriteLine($"{actor.Source} {message}");
+                Console.Write(actor.LoggingSource);
                 Console.ResetColor();
+                Console.WriteLine($": {message}");
             }
         }
     }
 
     public interface ILogMessages
     {
-        string Source { get; }
+        string LoggingSource { get; }
     }
 }

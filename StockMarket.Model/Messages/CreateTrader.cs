@@ -1,6 +1,4 @@
-﻿using System.Runtime.InteropServices;
-
-namespace StockMarket.Model.Messages
+﻿namespace StockMarket.Model.Messages
 {
     public class CreateTrader
     {

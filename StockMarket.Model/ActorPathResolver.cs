@@ -11,5 +11,10 @@
         {
             return $"/user/exchange/{sendOrderSymbol.ToLower()}";
         }
+
+        public static string ResolveLedgerPath()
+        {
+            return $"/user/ledger";
+        }
     }
 }

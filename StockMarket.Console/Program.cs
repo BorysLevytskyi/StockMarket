@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Akka.Actor;
 using StockMarket.Model;
 using StockMarket.Model.Messages;
 
@@ -17,23 +16,25 @@ namespace StockMarket.Console
 
         private static async Task RunStockMarket(StockMarketSystem market)
         {
-// market.CreateExchange("APPL");
+            // market.CreateExchange("APPL");
 
             market.CreateTrader("borys", "Borys Levytskyi");
+            market.CreateTrader("john", "John Smith");
+            market.CreateTrader("jack", "John Smith");
+
             market.CreateExchange("APPL");
 
             await Task.Delay(TimeSpan.FromSeconds(1));
 
-            var sendOrder = new SendOrder()
-            {
-                Symbol = "APPL",
-                Quantity = 1000,
-                PricePerShare = 234,
-                Type = OrderType.Buy
-            };
+            var borys = market.Trader("borys");
+            var john = market.Trader("john");
+            var jack = market.Trader("jack");
 
-            market.TellExchange("appl", new OrderPlaced());
-            market.TellTrader("borys", sendOrder);
+            borys.Buy("APPL", 1000, 200);
+            john.Sell("APPL", 500, 150);
+            jack.Sell("APPL", 250, 200);
+
+            System.Console.ReadLine();
         }
     }
 }

@@ -1,16 +1,14 @@
-﻿using System;
-using System.Threading.Tasks;
-using Akka.Actor;
-using StockMarket.Model.Messages;
+﻿using Akka.Actor;
 using StockMarket.Model.Logging;
+using StockMarket.Model.Messages;
 
-namespace StockMarket.Model.Actors
+namespace StockMarket.Model.Traders
 {
     public class TraderFactoryActor : ReceiveActor, ILogMessages
     {
         public TraderFactoryActor()
         {
-            Receive<CreateTrader>(OnCreateActor);
+            Receive<CreateTrader>(o => OnCreateActor(o));
         }
 
         private void OnCreateActor(CreateTrader c)
@@ -19,6 +17,6 @@ namespace StockMarket.Model.Actors
             this.Info($"created: {actor.Path}");
         }
 
-        string ILogMessages.Source => Self.Path.ToString();
+        string ILogMessages.LoggingSource => Self.Path.ToString();
     }
 }

@@ -2,13 +2,13 @@
 using StockMarket.Model.Logging;
 using StockMarket.Model.Messages;
 
-namespace StockMarket.Model.Actors
+namespace StockMarket.Model.Exchange
 {
     public class StockExchangeFactoryActor : ReceiveActor, ILogMessages
     {
         public StockExchangeFactoryActor()
         {
-            Receive<CreateExchange>(OnCreateExchange);
+            Receive<CreateExchange>(o => OnCreateExchange(o));
         }
 
         private void OnCreateExchange(CreateExchange createExchange)
@@ -17,6 +17,6 @@ namespace StockMarket.Model.Actors
             this.Info($"created: {actor.Path}");
         }
 
-        string ILogMessages.Source => Self.Path.ToString();
+        string ILogMessages.LoggingSource => Self.Path.ToString();
     }
 }

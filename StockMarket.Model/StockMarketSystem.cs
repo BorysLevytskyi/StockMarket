@@ -1,6 +1,10 @@
-﻿using Akka.Actor;
-using StockMarket.Model.Actors;
+﻿using System;
+using System.Threading;
+using Akka.Actor;
+using StockMarket.Model.Exchange;
+using StockMarket.Model.Ledger;
 using StockMarket.Model.Messages;
+using StockMarket.Model.Traders;
 
 namespace StockMarket.Model
 {
@@ -10,9 +14,17 @@ namespace StockMarket.Model
 
         private readonly ActorSystem _actorSystem;
 
+        private Lazy<IActorRef> TraderFactory { get; }
+
+        private Lazy<IActorRef> ExchangeFactory { get; }
+
         private StockMarketSystem(ActorSystem actorSystem)
         {
             _actorSystem = actorSystem;
+
+            TraderFactory = new Lazy<IActorRef>(() => _actorSystem.ActorOf<TraderFactoryActor>("trader"), LazyThreadSafetyMode.ExecutionAndPublication);
+            ExchangeFactory = new Lazy<IActorRef>(() => _actorSystem.ActorOf<StockExchangeFactoryActor>("exchange"));
+            _actorSystem.ActorOf(Props.Create<LedgerActor>(), "ledger");
         }
 
         public static StockMarketSystem Create()
@@ -22,8 +34,7 @@ namespace StockMarket.Model
 
         public void CreateTrader(string id, string name)
         {
-          _actorSystem.ActorOf<TraderFactoryActor>("trader")
-                .Tell(new CreateTrader
+            TraderFactory.Value.Tell(new CreateTrader
                 {
                     Id = id,
                     Name = name
@@ -32,8 +43,7 @@ namespace StockMarket.Model
 
         public void CreateExchange(string symbol)
         {
-           _actorSystem.ActorOf<StockExchangeFactoryActor>("exchange")
-                .Tell(new CreateExchange {Symbol = symbol});
+           ExchangeFactory.Value.Tell(new CreateExchange {Symbol = symbol});
         }
 
         public void TellTrader(string id, object message)
@@ -44,6 +54,11 @@ namespace StockMarket.Model
         public void TellExchange(string symbol, object message)
         {
             _actorSystem.ActorSelection(ActorPathResolver.ResolveExchangePath(symbol)).Tell(message, ActorRefs.NoSender);
+        }
+
+        public TraderHandler Trader(string traderId)
+        {
+            return new TraderHandler(this, traderId);
         }
     }
 }
