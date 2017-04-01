@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading;
 using Akka.Actor;
 using Akka.Event;
+using StockMarket.Model.Core;
 using StockMarket.Model.Exchange;
 using StockMarket.Model.Ledger;
 using StockMarket.Model.Messages;
@@ -60,13 +61,13 @@ namespace StockMarket.Model
             return new TraderHandler(this, traderId);
         }
 
-        public void SubsbribeTo<T>(Action<T> action)
+        public void SubsbribeTo<TEvent>(Action<TEvent> action) where TEvent : IMarketEvent
         {
             Actors.MarketEventSubscriber.Value
-                .Tell(new SubscriberActor.MarkedEventSubscription
+                .Tell(new MarketEventSubscriberActor.MarketEventSubscription
                 {
-                    Handle = msg => action((T)msg),
-                    MessageType = typeof(T)
+                    Handle = msg => action((TEvent)msg),
+                    MessageType = typeof(TEvent)
                 });
         }
     }

@@ -1,3 +1,5 @@
+using StockMarket.Model.Core;
+
 namespace StockMarket.Model.Exchange
 {
     public class Transaction : ITransaction

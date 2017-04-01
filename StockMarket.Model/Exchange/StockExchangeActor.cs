@@ -19,15 +19,6 @@ namespace StockMarket.Model.Exchange
             _symbol = symbol;
 
             Receive<OfferPlaced>(o => OnOfferPlaced(o));
-
-            Receive<TransactionCompleted>(t => OnTransactionCompleted(t));
-
-            Context.System.EventStream.Subscribe(Self, typeof(TransactionCompleted));
-        }
-
-        private void OnTransactionCompleted(TransactionCompleted transaction)
-        {
-            this.Info("Transaction completed", ConsoleColor.DarkMagenta);
         }
 
         private void OnOfferPlaced(OfferPlaced offer)

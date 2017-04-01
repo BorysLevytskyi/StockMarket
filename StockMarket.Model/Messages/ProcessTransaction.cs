@@ -1,3 +1,4 @@
+using StockMarket.Model.Core;
 using StockMarket.Model.Exchange;
 
 namespace StockMarket.Model.Messages

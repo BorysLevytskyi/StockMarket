@@ -22,7 +22,7 @@ namespace StockMarket.Console
             market.CreateTrader("john", "John Smith");
             market.CreateTrader("jack", "John Smith");
 
-            market.SubsbribeTo<PositionChanged>(p => System.Console.WriteLine($"Position changed: {p.TraderId} {p.Symbol} {p.OldQuantity} -> {p.NewQuantity}"));
+            market.SubsbribeTo<TraderPositionChanged>(p => System.Console.WriteLine($"Position changed: {p.TraderId} {p.Symbol} {p.OldQuantity} -> {p.NewQuantity}"));
 
             market.CreateExchange("APPL");
 

@@ -39,7 +39,7 @@ namespace StockMarket.Model.Traders
 
             Positions[key] = newPos;
 
-            Context.System.EventStream.Publish(new PositionChanged
+            Context.System.EventStream.Publish(new TraderPositionChanged
             {
                 TraderId = Id,
                 OldQuantity = oldPos.Quantity,

@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActorPathResolver.cs" />
+    <Compile Include="Core\IMarketEvent.cs" />
     <Compile Include="Core\IOfferFromTrader.cs" />
     <Compile Include="Core\ITransaction.cs" />
     <Compile Include="Exchange\OfferBook.cs" />
@@ -78,7 +79,7 @@
     <Compile Include="Messages\Events\PositionChanged.cs" />
     <Compile Include="Messages\Events\TransactionCompleted.cs" />
     <Compile Include="Messages\ProcessTransaction.cs" />
-    <Compile Include="SubscriberActor.cs" />
+    <Compile Include="MarketEventSubscriberActor.cs" />
     <Compile Include="TraderHandler.cs" />
     <Compile Include="Traders\Position.cs" />
     <Compile Include="Traders\TraderActor.cs" />

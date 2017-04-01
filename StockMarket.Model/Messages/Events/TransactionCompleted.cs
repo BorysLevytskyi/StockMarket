@@ -1,9 +1,9 @@
 ﻿using System;
-using StockMarket.Model.Exchange;
+using StockMarket.Model.Core;
 
 namespace StockMarket.Model.Messages.Events
 {
-    public class TransactionCompleted : ITransaction
+    public class TransactionCompleted : ITransaction, IMarketEvent
     {
         public TransactionCompleted()
         {

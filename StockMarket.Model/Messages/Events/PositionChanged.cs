@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StockMarket.Model.Core;
 
 namespace StockMarket.Model.Messages.Events
 {
-    public class PositionChanged
+    public class TraderPositionChanged : IMarketEvent
     {
         public string TraderId { get; set; }
 

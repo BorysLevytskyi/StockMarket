@@ -1,4 +1,5 @@
-namespace StockMarket.Model.Exchange
+
+namespace StockMarket.Model.Core
 {
     public interface ITransaction
     {

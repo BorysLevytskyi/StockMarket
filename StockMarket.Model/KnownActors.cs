@@ -12,7 +12,7 @@ namespace StockMarket.Model
         {
             TraderFactory = new Lazy<IActorRef>(() => actorSystem.ActorOf<TraderFactoryActor>("trader"), LazyThreadSafetyMode.ExecutionAndPublication);
             ExchangeFactory = new Lazy<IActorRef>(() => actorSystem.ActorOf<StockExchangeFactoryActor>("exchange"), LazyThreadSafetyMode.ExecutionAndPublication);
-            MarketEventSubscriber = new Lazy<IActorRef>(() => actorSystem.ActorOf<SubscriberActor>("market-event-subscriber"), LazyThreadSafetyMode.ExecutionAndPublication);
+            MarketEventSubscriber = new Lazy<IActorRef>(() => actorSystem.ActorOf<MarketEventSubscriberActor>("market-event-subscriber"), LazyThreadSafetyMode.ExecutionAndPublication);
         }
 
         public Lazy<IActorRef> TraderFactory { get; }
