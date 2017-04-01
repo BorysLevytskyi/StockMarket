@@ -73,9 +73,14 @@
     <Compile Include="Exchange\StockExchangeFactoryActor.cs" />
     <Compile Include="Exchange\StockExchangeActor.cs" />
     <Compile Include="Exchange\Transaction.cs" />
+    <Compile Include="KnownActors.cs" />
     <Compile Include="Ledger\LedgerActor.cs" />
+    <Compile Include="Messages\Events\PositionChanged.cs" />
+    <Compile Include="Messages\Events\TransactionCompleted.cs" />
     <Compile Include="Messages\ProcessTransaction.cs" />
+    <Compile Include="SubscriberActor.cs" />
     <Compile Include="TraderHandler.cs" />
+    <Compile Include="Traders\Position.cs" />
     <Compile Include="Traders\TraderActor.cs" />
     <Compile Include="Traders\TraderFactoryActor.cs" />
     <Compile Include="Logging\LoggingExtensions.cs" />
@@ -83,7 +88,7 @@
     <Compile Include="Messages\CreateTrader.cs" />
     <Compile Include="Core\IOrder.cs" />
     <Compile Include="Messages\OfferPlaced.cs" />
-    <Compile Include="Messages\OfferType.cs" />
+    <Compile Include="Messages\TradeType.cs" />
     <Compile Include="Messages\SendOffer.cs" />
     <Compile Include="StockMarketSystem.cs" />
   </ItemGroup>

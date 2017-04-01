@@ -11,12 +11,12 @@ namespace StockMarket.Model.Exchange
 
         public IEnumerable<IOfferFromTrader> GetSellOrders()
         {
-            return Offers.Where(o => o.Type == OfferType.Sell);
+            return Offers.Where(o => o.Type == TradeType.Sell);
         }
 
         public IEnumerable<IOfferFromTrader> GetBuyOrders()
         {
-            return Offers.Where(o => o.Type == OfferType.Buy);
+            return Offers.Where(o => o.Type == TradeType.Buy);
         }
 
         public void RegisterOrder(OfferFromTrader offer)
@@ -39,7 +39,7 @@ namespace StockMarket.Model.Exchange
 
         private static bool IsPriceMatches(IOfferFromTrader offer, OfferFromTrader o)
         {
-            if (offer.Type == OfferType.Buy)
+            if (offer.Type == TradeType.Buy)
             {
                 return offer.PricePerShare >= o.PricePerShare;
             }

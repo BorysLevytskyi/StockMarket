@@ -20,11 +20,12 @@ namespace StockMarket.Model
                 PricePerShare = pricePerShare,
                 Quantity = quantity,
                 Symbol = symbol,
-                Type = OfferType.Sell
+                Type = TradeType.Sell
             });
 
             return this;
         }
+
         public TraderHandler Buy(string symbol, int quantity, decimal pricePerShare)
         {
             _stockMarket.TellTrader(_traderId, new SendOffer
@@ -32,7 +33,7 @@ namespace StockMarket.Model
                 PricePerShare = pricePerShare,
                 Quantity = quantity,
                 Symbol = symbol,
-                Type = OfferType.Buy
+                Type = TradeType.Buy
             });
 
             return this;

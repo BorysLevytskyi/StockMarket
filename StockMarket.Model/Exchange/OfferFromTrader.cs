@@ -15,7 +15,7 @@ namespace StockMarket.Model.Exchange
             TraderId = source.TraderId;
         }
 
-        public OfferType Type { get; }
+        public TradeType Type { get; }
 
         public string Symbol { get; }
 
@@ -31,8 +31,8 @@ namespace StockMarket.Model.Exchange
             // Counter offer not of the same type
             // Not an empty offerN
 
-            var buyerId = counterOffer.Type == OfferType.Buy ? counterOffer.TraderId : TraderId;
-            var sellerId = Type == OfferType.Sell ? TraderId : counterOffer.TraderId;
+            var buyerId = counterOffer.Type == TradeType.Buy ? counterOffer.TraderId : TraderId;
+            var sellerId = Type == TradeType.Sell ? TraderId : counterOffer.TraderId;
 
             int quantity = CalculateQuantityToSell(counterOffer);
 

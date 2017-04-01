@@ -4,7 +4,7 @@ namespace StockMarket.Model.Core
 {
     public interface IOrder
     {
-        OfferType Type { get; }
+        TradeType Type { get; }
 
         string Symbol { get; }
 

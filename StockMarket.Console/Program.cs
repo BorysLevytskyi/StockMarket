@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using StockMarket.Model;
-using StockMarket.Model.Messages;
+using StockMarket.Model.Messages.Events;
 
 namespace StockMarket.Console
 {
@@ -21,6 +21,8 @@ namespace StockMarket.Console
             market.CreateTrader("borys", "Borys Levytskyi");
             market.CreateTrader("john", "John Smith");
             market.CreateTrader("jack", "John Smith");
+
+            market.SubsbribeTo<PositionChanged>(p => System.Console.WriteLine($"Position changed: {p.TraderId} {p.Symbol} {p.OldQuantity} -> {p.NewQuantity}"));
 
             market.CreateExchange("APPL");
 

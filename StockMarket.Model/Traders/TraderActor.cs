@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using Akka.Actor;
 using StockMarket.Model.Logging;
 using StockMarket.Model.Messages;
+using StockMarket.Model.Messages.Events;
 
 namespace StockMarket.Model.Traders
 {
@@ -11,12 +13,38 @@ namespace StockMarket.Model.Traders
 
         public string Id { get; set; }
 
+        public Dictionary<string, Position> Positions { get; } = new Dictionary<string, Position>(StringComparer.OrdinalIgnoreCase);
+
         public TraderActor(string id, string name)
         {
             Name = name;
             Id = id;
 
             Receive<SendOffer>(o => OnSendOrder(o));
+            Receive<TransactionCompleted>(o => OnTransactionCompleted(o));
+        }
+
+        private void OnTransactionCompleted(TransactionCompleted tran)
+        {
+            var key = tran.Symbol;
+            var tradeType = tran.BuyerTraderId == Id ? TradeType.Buy : TradeType.Sell;
+
+            Position oldPos;
+            if(!Positions.TryGetValue(key, out oldPos))
+            {
+                oldPos = new Position(0, tran.Symbol);
+            }
+
+            var newPos = oldPos.Adjust(tradeType, tran.Quantity);
+
+            Positions[key] = newPos;
+
+            Context.System.EventStream.Publish(new PositionChanged
+            {
+                TraderId = Id,
+                OldQuantity = oldPos.Quantity,
+                NewQuantity = newPos.Quantity
+            });
         }
 
         private void OnSendOrder(SendOffer sendOffer)

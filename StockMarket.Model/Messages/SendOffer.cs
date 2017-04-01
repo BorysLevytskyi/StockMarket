@@ -4,7 +4,7 @@ namespace StockMarket.Model.Messages
 {
     public class SendOffer : IOrder
     {
-        public OfferType Type { get; set; }
+        public TradeType Type { get; set; }
 
         public string Symbol { get; set; }
 

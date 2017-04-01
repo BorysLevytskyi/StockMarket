@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Linq;
+using System.Threading.Tasks;
 using Akka.Actor;
 using StockMarket.Model.Logging;
 using StockMarket.Model.Messages;
+using StockMarket.Model.Messages.Events;
 
 namespace StockMarket.Model.Exchange
 {
@@ -17,6 +19,15 @@ namespace StockMarket.Model.Exchange
             _symbol = symbol;
 
             Receive<OfferPlaced>(o => OnOfferPlaced(o));
+
+            Receive<TransactionCompleted>(t => OnTransactionCompleted(t));
+
+            Context.System.EventStream.Subscribe(Self, typeof(TransactionCompleted));
+        }
+
+        private void OnTransactionCompleted(TransactionCompleted transaction)
+        {
+            this.Info("Transaction completed", ConsoleColor.DarkMagenta);
         }
 
         private void OnOfferPlaced(OfferPlaced offer)
@@ -58,6 +69,8 @@ namespace StockMarket.Model.Exchange
                 OfferBook.RegisterOrder(newOffer);
                 this.Info($"Registered offer from {offer.TraderId}");
             }
+
+            OfferBook.PurgeFullfilledOffers();
         }
 
         public static Props Props(string symbol)

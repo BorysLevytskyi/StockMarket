@@ -6,7 +6,7 @@ namespace StockMarket.Model.Messages
     {
         public string TraderId { get; set; }
 
-        public OfferType Type { get; set; }
+        public TradeType Type { get; set; }
 
         public string Symbol { get; set; }
 

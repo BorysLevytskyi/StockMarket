@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Linq;
 using System.Threading;
 using Akka.Actor;
+using Akka.Event;
 using StockMarket.Model.Exchange;
 using StockMarket.Model.Ledger;
 using StockMarket.Model.Messages;
@@ -14,18 +16,15 @@ namespace StockMarket.Model
 
         private readonly ActorSystem _actorSystem;
 
-        private Lazy<IActorRef> TraderFactory { get; }
-
-        private Lazy<IActorRef> ExchangeFactory { get; }
-
         private StockMarketSystem(ActorSystem actorSystem)
         {
             _actorSystem = actorSystem;
+            Actors = new KnownActors(actorSystem);
 
-            TraderFactory = new Lazy<IActorRef>(() => _actorSystem.ActorOf<TraderFactoryActor>("trader"), LazyThreadSafetyMode.ExecutionAndPublication);
-            ExchangeFactory = new Lazy<IActorRef>(() => _actorSystem.ActorOf<StockExchangeFactoryActor>("exchange"));
             _actorSystem.ActorOf(Props.Create<LedgerActor>(), "ledger");
         }
+
+        public KnownActors Actors { get; }
 
         public static StockMarketSystem Create()
         {
@@ -34,7 +33,7 @@ namespace StockMarket.Model
 
         public void CreateTrader(string id, string name)
         {
-            TraderFactory.Value.Tell(new CreateTrader
+            Actors.TraderFactory.Value.Tell(new CreateTrader
                 {
                     Id = id,
                     Name = name
@@ -43,7 +42,7 @@ namespace StockMarket.Model
 
         public void CreateExchange(string symbol)
         {
-           ExchangeFactory.Value.Tell(new CreateExchange {Symbol = symbol});
+            Actors.ExchangeFactory.Value.Tell(new CreateExchange {Symbol = symbol});
         }
 
         public void TellTrader(string id, object message)
@@ -59,6 +58,16 @@ namespace StockMarket.Model
         public TraderHandler Trader(string traderId)
         {
             return new TraderHandler(this, traderId);
+        }
+
+        public void SubsbribeTo<T>(Action<T> action)
+        {
+            Actors.MarketEventSubscriber.Value
+                .Tell(new SubscriberActor.MarkedEventSubscription
+                {
+                    Handle = msg => action((T)msg),
+                    MessageType = typeof(T)
+                });
         }
     }
 }
